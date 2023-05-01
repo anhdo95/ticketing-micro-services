@@ -14,8 +14,15 @@ spec:
     spec:
       containers:
         - name: auth
-          # image: us.gcr.io/ticketing-dev-385213/auth
-          image: mcs/auth
+          image: us.gcr.io/ticketing-dev-385213/auth
+          # image: mcs/auth
+          resources:
+            limits:
+              cpu: 500m
+              memory: 256Mi
+            requests:
+              cpu: 250m
+              memory: 128Mi
           env:
             - name: JWT_KEY
               valueFrom:
