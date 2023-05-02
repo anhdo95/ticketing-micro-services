@@ -24,6 +24,8 @@ spec:
               cpu: 250m
               memory: 128Mi
           env:
+            - name: MONGO_URI
+              value: mongodb://auth-mongo-srv:27017/auth
             - name: JWT_KEY
               valueFrom:
                 secretKeyRef:
