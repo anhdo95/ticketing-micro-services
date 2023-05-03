@@ -11,13 +11,11 @@
     "@jridgewell/trace-mapping" "^0.3.9"
 
 "@anhdo-tickets/common@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@anhdo-tickets/common/-/common-1.0.3.tgz#a59532f422a73f88340a6e0718ecea68d9a65c82"
-  integrity sha512-+wb3wSI01mr2gulb2HcHOBR9oJfwBGdjmVaW/eH5fzk5/zGhrjhKwuAQQOF/wB/FNkhda8LGdnAJz5CTtFbkBw==
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@anhdo-tickets/common/-/common-1.0.5.tgz#7694224097db4d8e5f188d30cc6fbc3da4f462bb"
+  integrity sha512-xfFZ6JqDVnJMa7SbHvVUtx27Z3CjpFui/fwsE1mBOraxQB76V3fdo53pbTbyIg5PTV9uKd8T66rwCMdjxPOhoA==
   dependencies:
-    cookie-session "^2.0.0"
     express "^4.18.1"
-    express-async-errors "^3.1.1"
     express-validator "^6.14.2"
     jsonwebtoken "^9.0.0"
 
