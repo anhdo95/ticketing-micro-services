@@ -5,6 +5,7 @@ import cookieSession from 'cookie-session'
 import { currentUser, errorHandler, NotFoundError } from "@anhdo-tickets/common";
 
 import { createTicketRouter } from './routes/new'
+import { getTicketsRouter } from './routes/list'
 import { getTicketRouter } from './routes/detail'
 
 const app = express();
@@ -19,6 +20,7 @@ app.use(cookieSession({
 app.use(currentUser)
 
 app.use(createTicketRouter);
+app.use(getTicketsRouter);
 app.use(getTicketRouter);
 
 app.all('*', async () => {
