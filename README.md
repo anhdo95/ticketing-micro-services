@@ -1,7 +1,11 @@
 # ticketing-micro-services
 
-## Setup
-Create a JSON Web Token Secret
-```bash
-kubectl create secret generic jwt-secret --from-literal=JWT_KEY=<your_secret>
-```
+## Overview
+Build a ticking microservices for real projects
+
+## Tech stack
+- ExpressJS: backend services
+- NextJS: frontend application
+- Jest: testing framework for unit tests
+- Docker/K8s: automating deployment, scaling, and management of containerized applications.
+- Skaffold: automating repeatable k8s development
